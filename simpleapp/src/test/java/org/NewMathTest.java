@@ -1,5 +1,7 @@
 package org;
 
+import org.agilep365.lab.NewMath;
+
 import junit.framework.TestCase;
 
 public class NewMathTest extends TestCase {

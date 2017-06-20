@@ -1,4 +1,4 @@
-package org;
+package org.agilep365.lab;
 
 public class NewMath {
 	public int add(int x, int y) {
