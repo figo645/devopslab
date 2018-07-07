@@ -1,7 +1,8 @@
 package org.agilep365.lab;
 
 public class NewMath {
-	public int add(int x, int y) {
+	public int addedValue = 1;
+        public int add(int x, int y) {
 		return x + y;
 	}
 
