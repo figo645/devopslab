@@ -1,13 +1,21 @@
 package org.agilep365.lab;
 
 public class Users {
-
+	private String id;
 	private String username;
 	private String password;
 	private String firstName;
 	private String lastName;
 	private String gender;
 	private int age;
+	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
 
 	public String getGender() {
 		return gender;

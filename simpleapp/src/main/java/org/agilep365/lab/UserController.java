@@ -2,6 +2,7 @@ package org.agilep365.lab;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -14,15 +15,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class UserController {
 	// @Resource(name = "usersService")
 	// private UsersService userService;
-	private List<Users> userList = new ArrayList<Users>();
+	private static ArrayList<Users> userList = new ArrayList<Users>();
 
 	@RequestMapping("/updateadd")
 	public String update(Users user, Model model, HttpServletRequest request) {
+		user.setId(String.valueOf(UUID.randomUUID()));
 		model.addAttribute("user", user);
 		userList.add(user);
 		
 		HttpSession session = request.getSession();
 		session.setAttribute("userList",userList);
+		return "afterlogin";
+	}
+	
+	@RequestMapping("/delete")
+	public String delete(String id) {
+		List<Users> copyList = (ArrayList)userList.clone();
+			for (Users user :copyList){
+				if (user.getId().equals(id)){
+					userList.remove(user);
+				}
+			}
 		return "afterlogin";
 	}
 

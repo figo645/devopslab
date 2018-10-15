@@ -9,7 +9,7 @@
 	list up items
 	<c:forEach var="user" items="${userList}">
 		<div>
-		<c:out value="${user.username}"></c:out>
+		<c:out value="${user.username}"></c:out><a href="delete.do?id=${user.id}">del</a>
 		</div>
 	</c:forEach>
 </body>
