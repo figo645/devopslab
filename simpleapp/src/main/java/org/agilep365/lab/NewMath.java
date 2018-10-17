@@ -3,6 +3,15 @@ package org.agilep365.lab;
 public class NewMath {
 	public int addedValue = 1;
         public int add(int x, int y) {
+        	// bad smell
+    		for (int i=0;i<100;i++){
+    			for (int j=0;j<100;j++){
+    				for (int k=0;k<100;k++){
+    					// 3 loops
+    					
+    				}
+    			}
+    		}
 		return x + y;
 	}
 
