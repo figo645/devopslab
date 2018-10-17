@@ -18,7 +18,7 @@ public class NewMathTest extends TestCase {
 	public void testAdd() {
 		int x = 1;
 		int y = 2;
-		this.assertEquals(4, newmathInst.add(x, y));
+		this.assertEquals(3, newmathInst.add(x, y));
 	}
 
 	public void testMinus() {

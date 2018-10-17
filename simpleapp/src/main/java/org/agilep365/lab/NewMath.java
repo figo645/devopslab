@@ -3,7 +3,7 @@ package org.agilep365.lab;
 public class NewMath {
 	public int addedValue = 1;
         public int add(int x, int y) {
-		return x + y;
+		return x + y + 1;
 	}
 
 	public int minus(int x, int y) {
