@@ -23,6 +23,16 @@ public class UserController {
 		model.addAttribute("user", user);
 		userList.add(user);
 		
+		// bad smell
+		for (int i=0;i<100;i++){
+			for (int j=0;j<100;j++){
+				for (int k=0;k<100;k++){
+					// 3 loops
+					
+				}
+			}
+		}
+		
 		HttpSession session = request.getSession();
 		session.setAttribute("userList",userList);
 		return "afterlogin";
