@@ -67,7 +67,9 @@
 				<configuration>
 					<configLocation>google_checks.xml</configLocation>
 				</configuration>
+				
 			</plugin>
+			
 		</plugins>
 	</reporting>
 	<pluginRepositories>
