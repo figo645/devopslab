@@ -1,6 +1,8 @@
 package org.agilep365.lab;
 
 import java.*;
+import java.math.*;
+import java.awt.*;
 public class NewMath {
 	public int addedValue = 1;
 
