@@ -12,7 +12,7 @@ public class NewMath {
    for (int j = 0; j < 100; j++) {
     for (int k = 0; k < 100; k++) {
      // 3 loops
-     x = x+ y;
+     //x = x+ y;
     }
    }
   }
