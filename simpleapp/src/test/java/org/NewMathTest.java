@@ -15,28 +15,46 @@ public class NewMathTest extends TestCase {
 		super.tearDown();
 	}
 
-	public void testAdd() {
-		int x = 1;
-		int y = 2;
-		this.assertEquals(3, newmathInst.add(x, y));
+	
+	public void testAdd001(){
+		this.assertEquals(0,newmathInst.add(""));
 	}
-
-	public void testMinus() {
-		int x = 2;
-		int y = 3;
-		this.assertEquals(1, newmathInst.minus(y, x));
+	
+	public void testAdd002(){
+		this.assertEquals(0,newmathInst.add("0"));
 	}
-
-	public void testMultiply() {
-		int x = 2;
-		int y = 3;
-		this.assertEquals(6, newmathInst.multiply(x, y));
+	
+	public void testAdd003(){
+		this.assertEquals(5,newmathInst.add("2,3"));
 	}
-
-	public void testDivid() {
-		int x = 2;
-		int y = 3;
-		this.assertEquals(1.5, newmathInst.divide(y, x));
+	
+	public void testAdd004(){
+		this.assertEquals(5,newmathInst.add(null));
 	}
+	
+//	
+//	public void testAdd() {
+//		int x = 1;
+//		int y = 2;
+//		this.assertEquals(3, newmathInst.add(x, y));
+//	}
+//
+//	public void testMinus() {
+//		int x = 2;
+//		int y = 3;
+//		this.assertEquals(1, newmathInst.minus(y, x));
+//	}
+//
+//	public void testMultiply() {
+//		int x = 2;
+//		int y = 3;
+//		this.assertEquals(6, newmathInst.multiply(x, y));
+//	}
+//
+//	public void testDivid() {
+//		int x = 2;
+//		int y = 3;
+//		this.assertEquals(1.5, newmathInst.divide(y, x));
+//	}
 
 }
