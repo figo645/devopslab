@@ -28,9 +28,9 @@ public class NewMathTest extends TestCase {
 		this.assertEquals(5,newmathInst.add("2,3"));
 	}
 	
-//	public void testAdd004(){
-//		this.assertEquals(5,newmathInst.add(null));
-//	}
+	public void testAdd004(){
+		this.assertEquals(5,newmathInst.add(null));
+	}
 	
 //	
 //	public void testAdd() {
