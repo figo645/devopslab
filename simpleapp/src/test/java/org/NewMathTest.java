@@ -1,14 +1,18 @@
 package org;
 
+import org.agilep365.lab.MathService;
 import org.agilep365.lab.NewMath;
 
 import junit.framework.TestCase;
 
 public class NewMathTest extends TestCase {
 	NewMath newmathInst;
+	MathService service;
 
 	protected void setUp() throws Exception {
 		newmathInst = new NewMath();
+		service = new MathService();
+		super.setUp();
 	}
 
 	protected void tearDown() throws Exception {
@@ -29,7 +33,13 @@ public class NewMathTest extends TestCase {
 	}
 	
 	public void testAdd004(){
-		this.assertEquals(5,newmathInst.add(null));
+		//this.assertEquals(5,newmathInst.add(null));
+	}
+
+	public void testService(){
+		String compoundNums = "1,2,3,4,5";
+		String result = newmathInst.serviceCalc(compoundNums);
+		this.assertEquals("10", result);
 	}
 	
 //	
