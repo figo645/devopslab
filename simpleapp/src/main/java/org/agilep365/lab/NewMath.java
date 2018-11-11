@@ -5,12 +5,6 @@ package org.agilep365.lab;
 //import java.awt.*;
 public class NewMath {
 	public int addedValue = 1;
-	public MathService service;
-
-	public NewMath(){
-		service = new MathService();
-	}
-
 	/**
 	 * Add for Calculator
 	 * 
@@ -32,13 +26,12 @@ public class NewMath {
 	}
 
 	/**
-	 * same compoundNums to calculate 2 times of coompundNums
-	 * @param compoundNums
+	 * in construction Minus method
+	 * @param numbers
 	 * @return
 	 */
-	public String serviceCalc(String compoundNums){
-		MathObjecct result = (MathObjecct)service.complexAdd(compoundNums,compoundNums);
-		return result.getResultNum();
+	public int minus(String numbers){
+		return 0;
 	}
 
 	// public int add(int x, int y) {
