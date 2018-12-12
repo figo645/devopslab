@@ -23,8 +23,6 @@ public class UserController {
 		model.addAttribute("user", user);
 		userList.add(user);
 		
-		
-		
 		HttpSession session = request.getSession();
 		session.setAttribute("userList",userList);
 		return "afterlogin";
